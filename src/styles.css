@@ -1,3 +1,10 @@
+:root {
+  --light-primary: #f9faf8;
+  --light-secondary: #e5e7eb;
+  --dark: #1f2937;
+  --accent: #3882f6;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -6,8 +13,46 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   font-family: Roboto, sans-serif;
+}
+
+section#hero {
+  background-color: var(--dark);
+  display: grid;
+  grid-template-columns: auto minmax(650px, 1200px) auto;
+}
+
+.hero-header {
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+
+.hero-header > .logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--light-primary);
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.125rem;
+  color: var(--light-secondary);
 }
