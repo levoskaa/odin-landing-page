@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -28,7 +32,7 @@ body {
 section#hero {
   background-color: var(--dark);
   display: grid;
-  grid-template-columns: auto minmax(650px, 1200px) auto;
+  grid-template-columns: auto minmax(650px, 1000px) auto;
 }
 
 .hero-header {
@@ -36,7 +40,7 @@ section#hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.3rem 0;
+  height: 4.375rem;
 }
 
 .hero-header > .logo {
@@ -55,4 +59,44 @@ nav > ul {
 .nav-link {
   font-size: 1.125rem;
   color: var(--light-secondary);
+}
+
+.hero-content {
+  grid-column: 2 / span 1;
+  margin: 8rem 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.hero-content > :is(.left, .right) {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--light-primary);
+}
+
+.hero-text {
+  font-size: 1.125rem;
+  color: var(--light-secondary);
+  padding-bottom: 1rem;
+}
+
+.hero-button {
+  background-color: var(--accent);
+  color: var(--light-primary);
+  font-size: 1.125rem;
+  font-weight: 900;
+  padding: 0.5em 1.5em;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
