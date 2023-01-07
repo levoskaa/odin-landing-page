@@ -183,7 +183,7 @@ section#call-to-action > .container {
   margin: 0 auto;
   background-color: var(--accent);
   border-radius: 0.5rem;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 }
 
 section#call-to-action .flex-wrapper {
@@ -195,13 +195,14 @@ section#call-to-action .flex-wrapper {
 }
 
 .action-title {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: var(--light-primary);
   margin-bottom: 0.25rem;
 }
 
 .action-text {
+  font-size: 1.125rem;
   color: var(--light-secondary);
 }
 
@@ -216,4 +217,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.125rem;
 }
