@@ -108,7 +108,7 @@ nav > ul {
 
 section#features {
   background-color: var(--light-primary);
-  padding: 2.5rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 6rem 1rem;
 }
 
 .features-title {
@@ -146,7 +146,7 @@ section#features {
 section#quote {
   background-color: var(--light-secondary);
   color: var(--dark);
-  padding: 6rem 0 4rem 0;
+  padding: 8rem 0 6rem 0;
 }
 
 section#quote > .flex-wrapper {
@@ -175,7 +175,7 @@ section#quote > .flex-wrapper {
 }
 
 section#call-to-action {
-  padding: 4rem;
+  padding: 6rem 1rem;
 }
 
 section#call-to-action > .container {
@@ -207,4 +207,13 @@ section#call-to-action .flex-wrapper {
 
 section#call-to-action .btn {
   border: 2px solid var(--light-primary);
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light-primary);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
