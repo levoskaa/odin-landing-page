@@ -219,3 +219,7 @@ footer {
   align-items: center;
   font-size: 1.125rem;
 }
+
+footer .icon {
+  margin: 0.5em;
+}
