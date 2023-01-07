@@ -34,6 +34,16 @@ body {
   color: var(--dark);
 }
 
+.btn {
+  background-color: var(--accent);
+  color: var(--light-primary);
+  font-size: 1.125rem;
+  font-weight: 900;
+  padding: 0.3em 2em;
+  border-radius: 0.5rem;
+  border: none;
+}
+
 section#hero {
   background-color: var(--dark);
   display: grid;
@@ -87,16 +97,6 @@ nav > ul {
   font-size: 1.125rem;
   color: var(--light-secondary);
   padding-bottom: 1rem;
-}
-
-.hero-button {
-  background-color: var(--accent);
-  color: var(--light-primary);
-  font-size: 1.125rem;
-  font-weight: 900;
-  padding: 0.5em 1.5em;
-  border-radius: 0.5rem;
-  border: none;
 }
 
 .hero-img {
@@ -172,4 +172,39 @@ section#quote > .flex-wrapper {
 
 .quote-source::before {
   content: "-";
+}
+
+section#call-to-action {
+  padding: 4rem;
+}
+
+section#call-to-action > .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--accent);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+section#call-to-action .flex-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-title {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: var(--light-primary);
+  margin-bottom: 0.25rem;
+}
+
+.action-text {
+  color: var(--light-secondary);
+}
+
+section#call-to-action .btn {
+  border: 2px solid var(--light-primary);
 }
