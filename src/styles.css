@@ -27,6 +27,7 @@ button:hover {
 
 body {
   font-family: Roboto, sans-serif;
+  color: var(--dark);
 }
 
 section#hero {
@@ -99,4 +100,41 @@ nav > ul {
   height: auto;
   object-fit: cover;
   object-position: center;
+}
+
+section#features {
+  background-color: var(--light-primary);
+  padding: 2.5rem 1rem 5rem 1rem;
+}
+
+.features-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1;
+  max-width: 150px;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--accent);
+  border-radius: 1rem;
+}
+
+.feature-text {
+  text-align: justify;
+  text-align-last: center;
 }
